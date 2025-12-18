@@ -1,0 +1,1 @@
+print("o unico tetra tem nome:CULBE DE REGATAS DO FLAMENGO!")
