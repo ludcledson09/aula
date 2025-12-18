@@ -26,6 +26,7 @@ while running:
   x =x+3*sentido
   
   pygame.display.flip() # Desenha o quadro atual na tela
-  clock.tick(60) 
+  clock.tick(60)
 
 pygame.quit()
+
