@@ -5,7 +5,8 @@ janela = pygame.display.set_mode((640, 480))
 clock = pygame.time.Clock()
 quadrado = pygame.Surface([30, 30])
 quadrado.fill((0, 0, 0))
-x = 50       	# coordenada x do quadrado
+x = 50  
+y = 50     	# coordenada x do quadrado
 velocidade = 10   # velocidade de movimentação do quadrado
 
 while True:
@@ -18,8 +19,12 @@ while True:
     x = x - velocidade
   if teclas[pygame.K_RIGHT]:  # tecla direcional direita está sendo pressionada?
     x = x + velocidade
+  if teclas[pygame.K_UP]:     
+    y = y  - velocidade
+  if teclas[pygame.K_DOWN]:
+    y = y  + velocidade
  	 
   janela.fill((255, 255, 255))
-  janela.blit(quadrado, (x, 200))
+  janela.blit(quadrado, (x, y))
   pygame.display.flip()
   clock.tick(60)

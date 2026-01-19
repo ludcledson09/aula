@@ -17,7 +17,7 @@ while True:
       texto_2 = f"Último clique: botão {event.button} em ({event.pos[0]}, {event.pos[1]}) "
   screen.fill((255, 255, 255))
   surface_texto_1 = font.render(f"Posição: {mouse_x}, {mouse_y}", True, 'black')
-  screen.blit(surface_texto_1, (15, 15))
+  screen.blit(surface_texto_1, (mouse_x,mouse_x))
   surface_texto_2 = font.render(texto_2, True, 'black')
   screen.blit(surface_texto_2, (15, 40))
   pygame.display.flip()
